@@ -1,0 +1,31 @@
+<section>
+<div class="containerA">
+    <div class="signup-form">
+        <h1>Formulario de edição</h1>
+            <%= form_for @user do |f| %>
+                <% if @user.errors.any? %>
+                    <div id="error_explanation">
+                        <div class="alert-error">
+                                   O formulário contém <%= pluralize(@user.errors.count, "erro") %>.
+                        </div>
+                        <ul>
+                                   <% @user.errors.full_messages.each do |msg| %>
+                                   <li><%= msg %></li>
+                                   <% end %>
+                        </ul>
+                    </div>
+                <% end %>
+            <%= f.text_field :name , placeholder: 'Novo Nome'%>
+            <%= f.text_field :username, placeholder: 'Novo Nome de usuário', :required => true %>
+            <%= f.email_field :email, placeholder: 'Novo Email'%>
+            <%= f.password_field :password, placeholder: 'Nova Senha', :required => true %>
+            <%= f.password_field :password_confirmation, placeholder: 'Confirmar Nova Senha', :required => true %>
+            <%= f.submit "Salvar" %>
+            <% end %>
+    </div>
+</div>
+</section>
+<ul>
+            <li><%= link_to "Edit", edit_user_path(current_user) %></li>
+            <li><%= link_to "Delete", @user, method: :delete%></li>
+</ul>

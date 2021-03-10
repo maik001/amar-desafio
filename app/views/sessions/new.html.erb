@@ -1,0 +1,18 @@
+<div class="wrapper">
+      <div class="title">Login</div>
+<%= form_for :session, url: login_path do |f| %>
+        <div class="field">
+          <%= f.text_field :username, autofocus: true, :required => true %>
+          <%= f.label "Usuário" %><br />
+        </div>
+<div class="field">
+          <%= f.password_field :password, autocomplete: "off", :required => true %>
+          <%= f.label "Senha" %><br />
+        </div>
+<div class="field">
+          <input type="submit" value="Logar">
+        </div>
+<div class="signup-link">
+Não tem conta? <%= link_to "Cadastre-se", new_user_path %></div>
+<% end %>
+</div>

@@ -1,0 +1,307 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+//-------------Header---------------
+:root{
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+body{
+    color: black;
+    background: rgb(19,39,115);
+    background: linear-gradient(90deg, rgba(19,39,115,1) 0%, rgba(19,59,116,1) 100%); 
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ff0000;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 1rem;
+    
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:last-child{
+    margin-top: 255px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+}
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+.nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+.fa-primary{
+    color: #ff3535;
+}
+
+.fa-secondary{
+    color: #ff1c1c;
+}
+
+.fa-primary, 
+.fa-secondary{
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1rem;
+    width: 100%;
+  }
+
+
+.logo i{
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+
+.navbar:hover .logo i{
+    transform: rotate(-180deg);
+}
+
+.logo img{
+    display: none;
+}
+.navbar:hover .logo img{
+    display: list-item;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5.5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo i{
+      margin-left: 1rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+  }
+
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
+  }
+  
+//-------------Header---------------
+
+
+//-------------Cadastro-------------
+body{
+margin: 0;
+padding: 0;
+font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+width: 100%;
+height: 100vh;
+background-size: cover;
+}
+
+.containerA{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 320px;
+text-align: center;
+}
+
+.signup-form{
+position: relative;
+box-sizing: border-box;
+padding: 60px 30px;
+transition: .5s;
+}
+.signup-form:hover{
+background: rgba(255,255,255,.1);
+box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.signup-form h1{
+margin: 0 0 20px;
+color: #fff;
+font-size: 30px;
+text-transform: uppercase;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.signup-form input{
+display: block;
+width: 100%;
+padding: 10px 20px;
+box-sizing: border-box;
+margin-bottom: 20px;
+border-radius: 25px;
+outline: none;
+font-size: 14px;
+letter-spacing: 1px;
+color: #fff;
+text-transform: uppercase;
+border: none;
+background: rgba(255,255,255,.1);
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.signup-form input::placeholder{
+color: #fff;
+}
+
+.signup-form input[type="submit"]{
+color: #fff;
+background: #0082ff;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.signup-form input[type="submit"]:hover{
+background: #005aca;
+}
+
+.alert-error{
+color: black;
+text-decoration: none;
+font-family: 'Roboto Condensed', sans-serif;
+}
+//-------------Cadastro-------------

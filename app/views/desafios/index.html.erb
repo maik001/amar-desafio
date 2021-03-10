@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bahiana|Barrio" rel="stylesheet">
+</head>
+<body>
+    <h1>O <span id="header">Quiz</span> Aleatório</h1>
+    <div class="quiz-container">
+        <div id="quiz"></div>
+    </div>
+    <div id="progress-wrap">
+        <div id="progress-bar"></div>
+    </div>
+    <button id="previous">Questão anterior</button>
+    <button id="next">Próxima questão</button>
+    <button onclick="moBt()" id="submit">Enviar</button>
+    <button id="btnvid">Recompensa</button>
+    <div id="results"></div>
+    <div id="video"></div>
+    <%= javascript_pack_tag 'main', 'data-turbolinks-track': 'reload' %>
+</body>
+</html>

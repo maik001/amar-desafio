@@ -1,0 +1,54 @@
+<head>
+<%= javascript_pack_tag 'theme', 'data-turbolinks-track': 'reload' %>
+</head>
+<header>
+    <% if logged_in? %>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="logo">
+              <a href="../home" class="nav-link">
+                  <span class="link-text logo-text">Amar Educação</span>
+                  <%= image_tag("logoamar.png", width: 80) %>
+                  <i class="fas fa-chevron-right fa-angle-double-right fa-w-14 fa-3x fa-primary fa secondary"></i>
+              </a>
+
+            <li>
+            <li class="nav-item">
+              <%= link_to users_path, :class => "nav-link" do %>
+                <i class="fas fa-user-cog fa-angle-double-right fa-w-14 fa-2x fa-primary"></i>
+                <span class="link-text">Usuários</span>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to current_user, :class => "nav-link" do %>
+                <i class="fas fa-user-circle fa-angle-double-right fa-w-14 fa-2x fa-primary"></i>
+                <span class="link-text">Meu Perfil</span>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <a href="/desafios" class="nav-link">
+                <i class="fas fa-gamepad fa-angle-double-right fa-w-14 fa-2x fa-primary"></i>
+                <span class="link-text">Desafio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <%= link_to logout_path, method: "delete", :class => "nav-link" do %>
+                <i class="fas fa-sign-out-alt fa-angle-double-right fa-w-14 fa-2x fa-primary"></i>
+                <span class="link-text">Logout</span>
+                <% end %>
+            </li>
+            <li class="nav-item" id="themeButton">
+              <a href="" class="nav-link">
+              <i class="fas fa-glasses fa-angle-double-right fa-w-14 fa-2x fa-primary theme-icon" id="lightIcon"></i>
+              <i class="fas fa-sun fa-angle-double-right fa-w-14 fa-2x fa-primary theme-icon" id="solarIcon"></i>
+              <i class="fas fa-moon fa-angle-double-right fa-w-14 fa-2x fa-primary theme-icon" id="darkIcon"></i>
+              <span class="link-text">Tema</span>
+              </a>
+            </li>
+        </ul>
+    </nav>
+        <% else %>
+
+        <% end %>
+</header>
+</body>
