@@ -21,6 +21,8 @@ gem install rails
 Depois: 
 rails --version para checar se ocorreu tudo Ok
 
+rails server -> para ativar o servidor web local
+
 Agora é clonar o repositorio do projeto na sua pasta do servidor local e acessá-la pelo endereço:
 http://localhost:3000/
 
