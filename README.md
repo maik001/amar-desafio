@@ -37,7 +37,11 @@ Para Instalar o Ruby no
 depois apenas rodar o comando ruby -v para verificar a instalação  
 
 ### Sqlite3:  
-Para instalar o sqlite3 no Ubuntu também é bem simples, basta rodar o comando apt-get install sqlite3 e depois sqlite3 --version para verificar a instalação  
+Para instalar o sqlite3 no
+*  Ubuntu/Debian: sudo apt-get install sqlite3  
+*  Fedora/CentOs: sudo yum install sqlite3  
+*  Archlinux: sudo pacman -S sqlite3   
+depois sqlite3 --version para verificar a instalação  
 
 ### Ruby on Rails:  
 gem install rails e rails --version para verificar  
