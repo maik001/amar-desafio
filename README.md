@@ -22,8 +22,8 @@ Desafio feito em um Contexto de proposta de Estágio
 *  Após isso rode o comando rails --version para verificar se foi corretamente instalado. Saída esperada: Rails 6.1.3  
 
 ## Testagem no Windows:  
-*  Na pasta C:/Users/<Seu Usuario> execute o git clone desta aplicação ou baixe o arquivo zip descompacte e cole  
-*  Abra o cmd dentro da sua pasta de usuário e dê um cd <pasta do seu projeto>  
+*  Na pasta C:/Users/(Seu Usuario) execute o git clone desta aplicação ou baixe o arquivo zip descompacte e cole  
+*  Abra o cmd dentro da sua pasta de usuário e dê um cd na pasta do seu projeto
 *  Dentro da pasta do seu projeto execute o comando rails s ou rails server para iniciar o servidor local  
 *  Abra o seu navegador e digite a url (http://localhost:3000/) para acessar o projeto no servidor local  
 
