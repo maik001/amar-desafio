@@ -27,6 +27,7 @@ Desafio feito em um Contexto de proposta de Estágio
 *  Dentro da pasta do seu projeto execute o comando rails s ou rails server para iniciar o servidor local  
 *  Abra o seu navegador e digite a url (http://localhost:3000/) para acessar o projeto no servidor local  
 
+
 ## Instalação no Linux:  
 ### Ruby:  
 Para Instalar o Ruby no  
