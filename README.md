@@ -47,6 +47,6 @@ depois sqlite3 --version para verificar a instalação. Saída esperada: 3.34.1 
 gem install rails e rails --version para verificar  
 
 ## Testagem no Linux:  
-*  No seu terminal vá para a pasta raiz do seu Sistema e vá para srv/http e digite na pasta export PATH="/home/maikf/.local/share/gem/ruby/2.7.0/bin:$PATH", depois pode dar o git clone ou colar o código  
-*  cd <nome do projet> e Digite o comando rails s para iniciar o servidor web  
-*  agora é só abrir no navegaor a url (http://localhost:3000/) para acessar o projeto no servidor local
+*  No seu terminal vá para a pasta raiz do seu Sistema e vá para srv/http e digite na pasta export PATH="/home/(nome_do_usuario)/.local/share/gem/ruby/2.7.0/bin:$PATH", depois pode dar o git clone ou colar o código  
+*  cd na pasta do projeto e Digite o comando rails s/rails server para iniciar o servidor web  
+*  agora é só abrir no navegaor a url (http://localhost:3000/) para poder acessar o projeto no servidor local
