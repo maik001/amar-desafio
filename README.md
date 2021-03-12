@@ -2,9 +2,9 @@
 Desafio feito em um Contexto de proposta de Estágio
 
 ## Serviços a Instalar:
-*Ruby
-*Sqlite
-*Ruby on Rails
+*  Ruby
+*  Sqlite
+*  Ruby on Rails
 
 ## Instalação no Windows:
 ### Ruby:  
