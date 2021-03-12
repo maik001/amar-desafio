@@ -9,7 +9,7 @@ Desafio feito em um Contexto de proposta de Estágio
 ## Instalação no Windows:
 ### Ruby:  
 *  Para Instalar o Ruby no windows primeiro deve-se acessar o site oficial do Ruby e Baixar o Instalador da última versão do Ruby: https://rubyinstaller.org/downloads/  
-*  Logo após execute o Instalador, desmarque a última opção e Finish  
+*  Logo após execute o Instalador, instale o Ruby, desmarque a última opção e Finish  
 *  Abra o prompt de comando/cmd e digite o comando ruby -v para garantir que o Ruby foi corretamente instalado. Saida esperada: ruby 3.0.0p0 (2020-12-25 revision *5aff21468)  
 
 ### Sqlite3:  
