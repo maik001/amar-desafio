@@ -34,14 +34,14 @@ Para Instalar o Ruby no
 *  Ubuntu/Debian: sudo apt-get install ruby-full  
 *  Fedora/CentOs: sudo yum install ruby  
 *  Archlinux: sudo pacman -S ruby  
-depois apenas rodar o comando ruby -v para verificar a instalação  
+depois apenas rodar o comando ruby -v para verificar a instalação. Saida esperada: ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-linux]  
 
 ### Sqlite3:  
 Para instalar o sqlite3 no
 *  Ubuntu/Debian: sudo apt-get install sqlite3  
 *  Fedora/CentOs: sudo yum install sqlite3  
 *  Archlinux: sudo pacman -S sqlite3   
-depois sqlite3 --version para verificar a instalação  
+depois sqlite3 --version para verificar a instalação. Saída esperada: 3.34.1 2021-01-20 14:10:07 10e20c0b43500cfb9bbc0eaa061c57514f715d87238f4d835880cd846b9ealt1
 
 ### Ruby on Rails:  
 gem install rails e rails --version para verificar  
