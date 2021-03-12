@@ -2,41 +2,44 @@
 Desafio feito em um Contexto de proposta de Estágio
 
 ## Serviços a Instalar:
--Ruby
--Sqlite
--Ruby on Rails
+*Ruby
+*Sqlite
+*Ruby on Rails
 
 ## Instalação no Windows:
 ### Ruby:  
--Para Instalar o Ruby no windows primeiro deve-se acessar o site oficial do Ruby e Baixar o Instalador da última versão do Ruby: https://rubyinstaller.org/downloads/  
--Logo após execute o Instalador, desmarque a última opção e Finish  
--Abra o prompt de comando/cmd e digite o comando ruby -v para garantir que o Ruby foi corretamente instalado. Saida esperada: ruby 3.0.0p0 (2020-12-25 revision 95aff21468)  
+*Para Instalar o Ruby no windows primeiro deve-se acessar o site oficial do Ruby e Baixar o Instalador da última versão do Ruby: https://rubyinstaller.org/downloads/  
+*Logo após execute o Instalador, desmarque a última opção e Finish  
+*Abra o prompt de comando/cmd e digite o comando ruby -v para garantir que o Ruby foi corretamente instalado. Saida esperada: ruby 3.0.0p0 (2020-12-25 revision *5aff21468)  
 
 ### Sqlite3:  
--Para instalar o sqlite acesse o site https://www.sqlite.org/download.html vá para a sessão Precompiled Binaries for Windows e baixe sqlite-dll-win64-x64-3340100.zip e sqlite-tools-win32-x86-3340100.zip  
--Descompacte os arquivos zip copie os arquivos dentro de ambos e cole em C:\Ruby30-x64\bin\  
--No prompt de comando/cmd digite gem install sqlite3-ruby para instalar o sqlite  
+*Para instalar o sqlite acesse o site https://www.sqlite.org/download.html vá para a sessão Precompiled Binaries for Windows e baixe sqlite-dll-win64-x64-3340100.zip e sqlite-tools-win32-x86-3340100.zip  
+*Descompacte os arquivos zip copie os arquivos dentro de ambos e cole em C:\Ruby30-x64\bin\  
+*No prompt de comando/cmd digite gem install sqlite3-ruby para instalar o sqlite  
 
 ### Ruby on Rails:  
--Para instalar o Ruby on rails é mais simples, apenas rodar o seguinte comando no cmd: gem install rails  
--Após isso rode o comando rails --version para verificar se foi corretamente instalado. Saída esperada: Rails 6.1.3  
+*Para instalar o Ruby on rails é mais simples, apenas rodar o seguinte comando no cmd: gem install rails  
+*Após isso rode o comando rails --version para verificar se foi corretamente instalado. Saída esperada: Rails 6.1.3  
 
 ## Testagem no Windows:  
--Na pasta C:/Users/<Seu Usuario> execute o git clone desta aplicação ou baixe o arquivo zip descompacte e cole  
--Abra o cmd dentro da sua pasta de usuário e dê um cd <pasta do seu projeto>  
--Dentro da pasta do seu projeto execute o comando rails s ou rails server para iniciar o servidor local  
--Abra o seu navegador e digite a url (http://localhost:3000/) para acessar o projeto no servidor local
-
+*Na pasta C:/Users/<Seu Usuario> execute o git clone desta aplicação ou baixe o arquivo zip descompacte e cole  
+*Abra o cmd dentro da sua pasta de usuário e dê um cd <pasta do seu projeto>  
+*Dentro da pasta do seu projeto execute o comando rails s ou rails server para iniciar o servidor local  
+*Abra o seu navegador e digite a url (http://localhost:3000/) para acessar o projeto no servidor local  
 
 ## Instalação no Linux:  
 ### Ruby:  
-Para Instalar o Ruby no Ubuntu é simplesmente rodar o comando sudo apt-get install ruby-full e depois ruby -v para verificar a instalação
+Para Instalar o Ruby no  
+*Ubuntu/Debian: sudo apt-get install ruby-full  
+*Fedora/CentOs: sudo yum install ruby  
+*Archlinux: sudo pacman -S ruby  
+depois apenas rodar o comando ruby -v para verificar a instalação  
 
 ### Sqlite3:  
-Para instalar o sqlite3 no Ubuntu também é bem simples, basta rodar o comando apt-get install sqlite3 e depois sqlite3 --version para verificar a instalação
+Para instalar o sqlite3 no Ubuntu também é bem simples, basta rodar o comando apt-get install sqlite3 e depois sqlite3 --version para verificar a instalação  
 
 ### Ruby on Rails:  
-gem install rails e rails --version para verificar
+gem install rails e rails --version para verificar  
 
 ## Testagem no Linux:  
 -No seu terminal vá para a pasta raiz do seu Sistema e vá para srv/http e digite na pasta export PATH="/home/maikf/.local/share/gem/ruby/2.7.0/bin:$PATH", depois pode dar o git clone ou colar o código  
